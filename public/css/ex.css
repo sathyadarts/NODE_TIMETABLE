@@ -1,0 +1,82 @@
+body{
+    margin:0px;
+    background-image:url("background.jpg");
+    color:lightgreen;
+    font-size:20px;
+    }
+    p.t{border-top:solid blue;}
+    a:visited{color:lightgreen}
+    a:link{color:lightgreen}
+    a{text-decoration:none}
+    #nav {
+        margin: 50px;
+        z-index: 10;
+        display: block;
+    }
+        #nav li { float: left; }
+            #nav li:hover { position: relative }
+            #nav li:hover > a { 
+                background: #021A1A; 
+                
+                box-shadow: 5px 5px 25px #000;
+                -moz-box-shadow: 5px 5px 25px #000;
+                -webkit-box-shadow: 5px 5px 25px #000;
+        
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;                  
+            }
+                #nav li.sub:hover > a {
+                    border-radius: 10px 10px 0 0;
+                    -moz-border-radius: 10px 10px 0 0;
+                    -webkit-border-radius: 10px 10px 0 0;        
+                }
+    
+                #nav li a {
+                    color: #351515;
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: 12px;
+                    display: block;
+                }
+                    #nav li a:hover { background-color: #021A1A; }        
+                        
+        #nav li ul { 
+            background: #3b0c0c;
+            margin-top: -2px;
+            display: none;   
+        }
+            #nav li:hover ul {
+                display:block; 
+                position:absolute; 
+            }
+    
+            #nav li ul {
+                background: rgba(88, 54, 54, 0.5);
+                padding: 10px 5px;
+                
+                box-shadow: 5px 5px 25px #000;
+                -moz-box-shadow: 5px 5px 25px #000;
+                -webkit-box-shadow: 5px 5px 25px #000;
+                
+                border-radius: 0px 15px 15px 15px;
+                -moz-border-radius: 0px 15px 15px 15px;
+                -webkit-border-radius: 0px 5px 5px 5px;
+            }
+                #nav li ul li a, #nav li ul li a:hover {
+                    background: transparent;
+                    color: #000;
+                    width: 150px;
+                    font-size: 0.95em;
+                    font-weight: normal;
+                }
+                    #nav li ul li a:hover { text-decoration: none; 
+                        box-shadow: none;
+                        -moz-box-shadow: none;
+                        -webkit-box-shadow: none;
+                                
+                        border-radius: 0;
+                        -moz-border-radius: 0;
+                        -webkit-border-radius: 0;
+                    }
+    
